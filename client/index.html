@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department and Employee Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Department and Employee Management</h1>
+    </header>
+    <main>
+      <section id="department-section">
+        <h2>Departments</h2>
+        <form id="add-department-form">
+          <input type="text" id="deptNo" placeholder="Department ID" required />
+          <input
+            type="text"
+            id="deptName"
+            placeholder="Department Name"
+            required />
+          <input type="text" id="cellNo" placeholder="Cell No" />
+          <input
+            type="number"
+            id="status"
+            placeholder="Status (0/1)"
+            required />
+          <button type="submit">Add Department</button>
+        </form>
+        <ul id="department-list"></ul>
+      </section>
+      <section id="employee-section">
+        <h2>Employees</h2>
+        <form id="add-employee-form">
+          <input type="number" id="pNo" placeholder="Employee ID" required />
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="number" id="salary" placeholder="Salary" />
+          <input
+            type="text"
+            id="deptNoForEmployee"
+            placeholder="Department ID" />
+          <button type="submit">Add Employee</button>
+        </form>
+        <ul id="employee-list"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
